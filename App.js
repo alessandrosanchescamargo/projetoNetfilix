@@ -1,20 +1,21 @@
-import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
-import Index from './src/telas/index/Index';
-import mock from "./mock/Lista"
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ScrollVertical from './src/telas/scrollVertical/ScrollVerticalHome';
+import Home from './src/telas/Home';
+import ScrollHorizontal from './src/telas/scrollHorizontal/ScrollHorizontalHome';
+
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
-    <SafeAreaView>
-      <StatusBar />
-        <Index {...mock}/>
-    </SafeAreaView>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name='Home' component={Home}/>
+            <Stack.Screen name='Scroll Vertical' component={ScrollVertical}/>
+            <Stack.Screen name='Scroll Horizontal' component={ScrollHorizontal} />
+          </Stack.Navigator>
+        </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
