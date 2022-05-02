@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
+import React from "react"
 import Index from "./Index"
 import mock from "../../../mock/Lista"
 

@@ -10,6 +10,9 @@ export default function Home({navigation}){
             <TouchableOpacity onPress={() => {navigation.navigate("Scroll Horizontal")}} style={estilos.botao}>
                 <Text style={estilos.texto}>Scroll Horizontal</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate("Flat List")}} style={estilos.botao}>
+                <Text style={estilos.texto}>Flat List</Text>
+            </TouchableOpacity>
         </>
     )
 }
