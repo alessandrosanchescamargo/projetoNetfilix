@@ -13,6 +13,9 @@ export default function Home({navigation}){
             <TouchableOpacity onPress={() => {navigation.navigate("Flat List")}} style={estilos.botao}>
                 <Text style={estilos.texto}>Flat List</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate("Dois Scrolls")}} style={estilos.botao}>
+                <Text style={estilos.texto}>Dois Scrolls</Text>
+            </TouchableOpacity>
         </>
     )
 }

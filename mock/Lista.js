@@ -56,6 +56,41 @@ const filmes = {
             imagem: afsd,
         },
 
+    ],
+    imagens: [
+        {
+            imagem: hp1
+        },
+        {
+            imagem: hp2
+        },
+        {
+            imagem: hp3
+        },
+        {
+            imagem: hp4
+        },
+        {
+            imagem: hp5
+        },
+        {
+            imagem: hp6
+        },
+        {
+            imagem: hp7
+        },
+        {
+            imagem: hp8
+        },
+        {
+            imagem: afoh
+        },
+        {
+            imagem: afcg
+        },
+        {
+            imagem: afsd
+        },
     ]
 }
 export default filmes
